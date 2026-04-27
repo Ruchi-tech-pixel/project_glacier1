@@ -119,6 +119,7 @@ temp = st.slider("Temperature", -25, 10, -5)
 precip = st.slider("Precipitation", 150, 4500, 1000)
 ice = st.slider("Ice Thickness", 20, 500, 100)
 
+
 if st.button("Predict"):
     region_enc = le_region.transform([region_input])[0]
     status_enc = le_status.transform([status_input])[0]
